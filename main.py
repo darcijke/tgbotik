@@ -1,6 +1,5 @@
 import asyncio
 import aiosqlite
-import os
 
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
@@ -8,8 +7,8 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.types import FSInputFile
 
-TOKEN = os.getenv("TOKEN")
-ADMIN_ID = int(os.getenv("ADMIN_ID"))
+TOKEN = "8740478355:AAFBNv6LM8lVoJ9c0NteuBzr9T2lgH0TT7k"
+ADMIN_ID = 547379929  # ИНТ, НЕ строка
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
