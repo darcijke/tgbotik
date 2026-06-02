@@ -117,10 +117,10 @@ async def admin_actions(callback: CallbackQuery):
         return
 
     if callback.data == "a11":
-        await send_to_all("🥂 Почти как лето в Италии… Через 3 дня встречаемся на вечере La Dolce Vita 🥂")
+        await send_to_all("🥂 Почти как лето в Италии… Через 2 дня встречаемся на вечере La Dolce Vita 🥂")
 
     elif callback.data == "a12":
-        await send_to_all("Итальянский вечер становится всё ближе. Всего 2 дня до празднования. Музыка, лимоны и атмосфера итальянского лета ☀️")
+        await send_to_all("Итальянский вечер становится всё ближе. Всего 1 день до празднования. Музыка, лимоны и атмосфера итальянского лета ☀️")
 
     elif callback.data == "a13":
         await send_to_all(
