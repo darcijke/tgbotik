@@ -1,6 +1,6 @@
+import os
 import asyncio
 import aiosqlite
-import os
 
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
@@ -8,8 +8,12 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.types import FSInputFile
 
-TOKEN = os.environ["BOT_API_TOKEN"]
-ADMIN_ID = 547379929  # ИНТ, НЕ строка
+TOKEN = os.getenv("BOT_API_TOKEN")
+
+if not TOKEN:
+    raise RuntimeError("BOT_API_TOKEN не задан")
+
+ADMIN_ID = 547379929
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
